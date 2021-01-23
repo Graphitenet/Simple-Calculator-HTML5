@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		
+		</style>
+</head>
+
+<body>
+	    <div class="calculator">
+		    <form name="cal" id="scal">
+			<h2 align="center">Simple Calculator</h2>
+	
+		 <table align="center">
+		 <tr><td colspan="4"><input type="text" class="display" name="visible" value=""></td></tr>
+		<tr>
+			<td><input type="button" class="add" value="+" onClick="cal.visible.value+='+'"></td>
+		<td><input type="button" class="sub" value="-" onClick="cal.visible.value+='-'"></td>
+		<td><input type="button" class="product" value="*" onClick="cal.visible.value+='*'"></td>
+		<td><input type="button" class="quotient" value="÷" onClick="cal.visible.value+='/'"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onClick="cal.visible.value+='7'"></td>
+		<td><input type="button"  value="8" onClick="cal.visible.value+='8'"></td>
+			<td><input type="button" value="9" onClick="cal.visible.value+='9'"></td>
+			<td rowspan="4"><input type="button" value="Ac" id="ac" onClick="cal.visible.value =''"></td>
+		</tr>
+		<tr><td><input type="button" value="4" onClick="cal.visible.value+='4'"></td>
+		<td><input type="button" value="5" onClick="cal.visible.value+='5'"></td>
+		<td><input type="button" value="6" onClick="cal.visible.value+='6'"></td></tr>
+		<tr>
+			<td><input type="button" value="3" onClick="cal.visible.value+='3'"></td>
+		<td><input type="button"  value="2" onClick="cal.visible.value+='2'"></td>
+		<td><input type="button"  value="1" onClick="cal.visible.value+='1'"></td></tr>
+		<tr>
+			<td><input type="button" value="0" onClick="cal.visible.value+='0'"></td>
+		<td><input type="button" class="dml" value="." id="deci" onClick="cal.visible.value+='.'"></td>
+		<td><input type="button" class="evaluates" value="=" onClick="cal.visible.value =eval(cal.visible.value)"></td>
+			
+     	</tr>
+		</table>
+			</form>
+	</div>
+		
+</body>
+</html>
